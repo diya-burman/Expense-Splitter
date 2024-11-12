@@ -4,22 +4,24 @@
 
 body {
     margin: 0;
-    padding: 16px;
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f2f2f7; /* Adjust background color if desired */
+    font-family: sans-serif;
 }
 
 main {
     max-width: 700px;
-    margin: auto;
     display: flex;
     align-items: center;
     gap: 20px;
-    padding: 20px;
-    border-radius: 8px;
+    padding: 16px;
     background-color: #fff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 40px; /* Adjusted to reduce gap between heading and content */
 }
 
 main > div {
@@ -34,6 +36,22 @@ main > div {
 p {
     margin-bottom: 8px;
     font-weight: bold;
+}
+
+.heading {
+    position: absolute;
+    top: 7px; /* Adjusted to reduce gap from the top */
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 36px;
+    color: #6f3cff;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    letter-spacing: 1px;
+    background: linear-gradient(90deg, #16254d, #5703ac);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .input-container {
